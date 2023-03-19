@@ -11,14 +11,14 @@
  */
 
 plugins {
-    kotlin("jvm") version "1.6.10"
-    kotlin("plugin.serialization") version "1.6.10"
+    kotlin("jvm") version "1.8.10"
+    kotlin("plugin.serialization") version "1.8.10"
     id("de.comahe.i18n4k") version "0.3.0"
     application
 }
 
 group = "com.github.matteof04"
-version = "1.0.0"
+version = "1.0.1"
 
 i18n4k {
     sourceCodeLocales = listOf("en", "it")
@@ -49,8 +49,8 @@ dependencies {
     implementation("io.github.kotlin-telegram-bot:kotlin-telegram-bot:$ktbVersion"){
         exclude(module = "webhook")
     }
-    implementation("de.comahe.i18n4k:i18n4k-core-jvm:0.3.0")
-    implementation("com.github.matteof04:PocketApi:1.0.0")
+    implementation("de.comahe.i18n4k:i18n4k-core-jvm:0.5.0")
+    implementation("com.github.matteof04:PocketApi:1.0.1")
 }
 
 tasks.withType<Tar> {
